@@ -1,0 +1,44 @@
+.contactsection3 .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contactsection3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.contactsection3 h4{
+    text-align: center;
+    font-size: 25px;
+}
+
+.contactsection3 .box1{
+    margin-top: 5%;
+    border: 3px solid #83BC2E;
+    border-radius: 10px;
+    padding:40px 20px;
+}
+
+.contactsection3 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactsection3 textarea{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#row1 .info{
+    text-align: center;
+    margin-top: 20px;
+    column-count: 3;
+    margin-left: 7%;
+    column-gap: 20px;
+}

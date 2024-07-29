@@ -1,0 +1,57 @@
+ [
+    {
+        "id":1,
+         "companyName":"amul",
+         "productName":"milk",
+         "Quantity":"1l",
+         "price":"Rs. 60",
+         "img1src":"images/home/product1.png",
+         "img2src":"images/home/product2.jpg"
+    },
+    {
+        "id":2,
+         "companyName":"amul",
+         "productName":"Ghee",
+         "Quantity":"1l",
+         "price":"Rs. 620",
+         "img1src":"images/home/product3.png",
+         "img2src":"images/home/product4.jpg"
+    },
+    {
+        "id":3,
+         "companyName":"amul",
+         "productName":"Paneer",
+         "Quantity":"250gm",
+         "price":"Rs. 80",
+         "img1src":"images/home/product5.jpg",
+         "img2src":"images/home/product6.webp"
+    },
+    {
+        "id":4,
+         "companyName":"real",
+         "productName":"Mix Fruit Juice",
+         "Quantity":"1/2l",
+         "price":"Rs. 100",
+         "img1src":"images/home/product7.jpg",
+         "img2src":"images/home/product8.jpg"
+    },
+    {
+        "id":5,
+         "companyName":"paperboat",
+         "productName":"Mango Juice",
+         "Quantity":"1/2l",
+         "price":"Rs. 120",
+         "img1src":"images/home/product9.png",
+         "img2src":"images/home/product10.jpg"
+    },
+    {
+        "id":6,
+         "companyName":"rawjuice",
+         "productName":"Mixed Juice",
+         "Quantity":"1/2l",
+         "price":"Rs. 212",
+         "img1src":"images/home/product11.jpg",
+         "img2src":"images/home/product12.jpg"
+    }
+    
+]

@@ -1,0 +1,82 @@
+.section1 .container-fluid {
+    margin-top: 9%;
+    background-image: url(../images/aboutus/page-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    color:black;
+    font-size: 25px;
+    gap:25px;
+    font-weight: 800;
+}
+ol li{
+    list-style-type: none;
+}
+.current{
+    color:red
+}
+.section1 ol li a {
+    color: #253237;
+    
+}
+
+#breadcrumb-home:hover {
+    color: red;
+}
+
+.aboutsection2{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#row1 img{
+    height: 300px;
+    border-radius: 10px;
+}
+#row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #212324;
+    text-align: justify;
+    font-size: medium;
+}
+#row1 p{
+    color: #7d8081;
+}
+.aboutsection2  h1 {
+    
+    font-weight: 800 !important;
+}
+.aboutsection2 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.aboutsection2 h5 {
+    font-size: 24px;
+    font-weight: 700 !important;
+    color: #1d1d1d;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.aboutsection2 p {
+    font-size: 16px;
+    color: #7d8081;
+    text-align: justify;
+    font-weight: 400 !important;
+}
+
+
