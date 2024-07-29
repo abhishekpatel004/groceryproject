@@ -28,53 +28,72 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    
+    <style>
+      .error{
+        color: red;
+        display: none;
+      }
+    </style>
 </head>
 <body>
-    <header></header>
+    <header id="header"></header>
     <main class="login">
-        <form>
-            <p style="display: flex;justify-content: center;align-items: center;gap:10px;font-size: 20px;font-weight: 700;"><img src="../images/home/signup.jpg" alt="" style="height: 40px;"> Signup</p>
-            <label htmlFor="name">Name</label>
-            <input type="text"
-            id='name'
-            name='name'
-            />
-            <label htmlFor="password" className='pt-5'>Password</label>
-            <input type="password" 
-            id='password'
-            name='password' 
-            />
-            <label htmlFor="phoneno" className='pt-5'>Phone No</label>
-            <input type="phoneno" 
-            id='phoneno'
-            name='phoneno' 
-            />
-            <label htmlFor="street"className="pt-5">Street</label>
-            <input type="text"
-            id='street'
-            name='street'
-            />
-            <label htmlFor="area"className="pt-5">Area</label>
-            <input type="text"
-            id='area'
-            name='area' 
-            />
-            <label htmlFor="city"className="pt-5">City</label>
-            <input type="text"
-            id='city'
-            name='city'
-            />
-            <label htmlFor="pincode"className="pt-5">Pincode</label>
-            <input type="text"
-            id='pincode'
-            name='pincode' 
-            />
-            <p>Already a user ? <a href="../html/login.html">Login</a></p>
-            <button type='submit'>Signup</button>
-        </form>
+      <form action="../html/login.html">
+          <p style="display: flex;justify-content: center;align-items: center;gap:10px;font-size: 20px;font-weight: 700;"><img src="../images/home/signup.jpg" alt="" style="height: 40px;"> Signup</p>
+          <label htmlFor="name">Name</label>
+          <input type="text"
+          id='name'
+          name='name'
+          />
+          <p class="error" id="nameerror">* Name Should contains only aplhabets</p>
+          <label htmlFor="password" className='pt-5'>Password</label>
+          <input type="password" 
+          id='password'
+          name='password' 
+          required
+          />
+          <p class="error" id="passworderror">* Password Should contains a Uppercase,number and special case letter<br> * Password Length should be atleast 8</p>
+          <label htmlFor="phoneno" className='pt-5'>Phone No</label>
+          <input type="phoneno" 
+          id='phoneno'
+          name='phoneno' 
+          required
+          />
+          <p class="error" id="phoneerror">* Phone no should contains numbers and length should be 10</p>
+          <label htmlFor="street"className="pt-5">Street</label>
+          <input type="text"
+          id='street'
+          name='street'
+          required
+          />
+          <p class="error" id="streeterror">* Street Should contains only aplhabets</p>
+          <label htmlFor="area"className="pt-5">Area</label>
+          <input type="text"
+          id='area'
+          name='area' 
+          required
+          />
+          <p class="error" id="areaerror">* Area Should contains only aplhabets</p>
+          <label htmlFor="city"className="pt-5">City</label>
+          <input type="text"
+          id='city'
+          name='city'
+          required
+          />
+          <p class="error" id="cityerror">* City Should contains only aplhabets</p>
+          <label htmlFor="pincode"className="pt-5">Pincode</label>
+          <input type="text"
+          id='pincode'
+          name='pincode'
+          required
+          />
+          <p class="error" id="pincodeerror">* Pincode Should contains only numbers and length should be 6</p>
+          <p>Already a user ? <a href="../html/login.html">Login</a></p>
+          <button type='submit'>Signup</button>
+      </form>
     </main>
     <footer id="footer"></footer>
     <script src="../js/compnentadd.js"></script>
+    <script src="../js/validation.js"></script>
 </body>
 </html>

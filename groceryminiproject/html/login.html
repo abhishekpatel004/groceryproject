@@ -28,23 +28,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    
+    <style>
+      .error{
+        color: red;
+        display: none;
+      }
+    </style>
 </head>
 <body>
     <header id="header"></header>
     <main class="login">
-        <form>
+        <form action="../html/index.html">
             <p style="display: flex;justify-content: center;align-items: center;font-size: 20px;font-weight: 700;"><img src="../images/home/login.jpg" alt="" style="height: 80px;"> Login</p>
             <label htmlFor="phoneno" className='pt-5'>Phone No</label>
             <input type="phoneno" 
             id='phoneno'
-            name='phoneno' 
+            name='phoneno'
+            required 
             />
+            <p class="error" id="phoneerror">* Phone no should contains numbers and length should be 10</p>
             <label htmlFor="password" className='pt-5'>Password</label>
             <input type="password" 
             id='password'
             name='password' 
+            required
             />
+            <p class="error" id="passworderror">* Password Should contains a Uppercase,number and special case letter<br> * Password Length should be atleast 8</p>
             <p>New User ? <a href="../html/signup.html">Signup</a></p>
             <button type='submit'>Login</button>
         </form>

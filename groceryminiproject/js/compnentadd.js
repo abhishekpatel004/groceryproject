@@ -11,6 +11,10 @@ fetch('../html/navbar-footer.html')
             }else if(fileName === entry.textContent.toLowerCase()){
                 doc.querySelector(".left-list a").removeAttribute("class");
                 entry.setAttribute("class","active");
+            }else if(fileName === "signup"){
+                doc.querySelector(".left-list a").removeAttribute("class");
+                doc.getElementById("loginsignup").innerHTML = "Signup";
+
             }
           })
           document.getElementById('header').appendChild(doc.getElementById("upper-nav"));

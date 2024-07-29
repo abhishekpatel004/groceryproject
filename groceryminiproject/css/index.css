@@ -410,17 +410,22 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 40px;
 }
 .section5 .row{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap:3%;
 }
 .card-img-top{
     width: 350px!important;
     height: 300px!important;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
 }
 .card-img,
 .card-img-top {
@@ -433,6 +438,7 @@ header {
     border: 1px solid #ebebeb;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.377);
+    margin-top: 50px;
 }
 
 .card-body{
@@ -466,6 +472,19 @@ header {
 .card-text:hover {
     color: #83BC2E;
     cursor: pointer;
+}
+
+select{
+     height: 35px;
+     width: 200px!important;
+     border: 2px solid black;
+     outline: none;
+     border-radius: 5px;
+}
+
+select:focus{
+    outline: none;
+    border: 2px solid #83BC2E;
 }
 
 #favourite {

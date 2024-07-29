@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
+
 <body>
   <header id="header"></header>
   <main>
@@ -165,363 +166,35 @@
         </div>
     </div>
     <div class="section5">
-        <div class="box section-title">
-          <p class="sub-title">See Our Latest</p>
-          <h1 class="title">OUR PRODUCTS</h1>
+      <div class="box section-title">
+        <p class="sub-title">See Our Latest</p>
+        <h1 class="title">OUR PRODUCTS</h1>
+      </div>
+      <div class="filters">
+        <div id="price">
+          <span style="font-weight: 700;">Additional Filters : </span>
+          <input type="radio" name="pricesort" id="ltoh" value="asc" onchange="sortByPrice(this)"> Low to High &nbsp;
+          <input type="radio" name="pricesort" id="htol" value="desc" onchange="sortByPrice(this)"> High to Low &nbsp;
+          <input type="radio" name="pricesort" id="remove" value="removefilter" onchange="removeAllFilter(this)"> Remove All Filters
         </div>
-        <div class="products">
-          <div class="row">
-            <div class="col">
-              <div class="card">
-                <div class="image-box">
-                  <div class="card-new-label" style="background-color: red;">
-                    30%
-                  </div>
-                  <img src="../images/home/product1.png" class="card-img-top" alt="...">
-                  <div class="image-icon">
-                    <div class="card-new-label" style="background-color: red;">
-                      30%
-                    </div>
-                    <img src="../images/home/product2.jpg" class="card-img-top" alt="...">
-                    <div class="row img-icon-row">
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="favourite">
-                            <span class="material-symbols-outlined">
-                            favorite
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="autorenew">
-                            <span class="material-symbols-outlined">
-                              Autorenew
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="search1">
-                            <span class="material-symbols-outlined">
-                              search
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="shopping1">
-                            <span class="material-symbols-outlined">
-                              shopping_bag
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div> 
-                </div>
-                <div class="card-body">
-                  <p class="card-text" style="font-weight: 700;">Amul Gold (1L)</p>
-                  <p style="color:#83BC2E;font-size: 16px;font-weight: 700;"><span class="text-muted" style="font-size:14px!important;">Rs. 60.90</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="image-box">
-                  <div class="card-new-label">
-                    New
-                  </div>
-                  <img src="../images/home/product3.png" class="card-img-top" alt="...">
-                  <div class="image-icon">
-                    <div class="card-new-label">
-                      New
-                    </div>
-                    <img src="../images/home/product4.jpg" class="card-img-top" alt="...">
-                    <div class="row img-icon-row">
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="favourite">
-                            <span class="material-symbols-outlined">
-                            favorite
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="autorenew">
-                            <span class="material-symbols-outlined">
-                              Autorenew
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="search1">
-                            <span class="material-symbols-outlined">
-                              search
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="shopping1">
-                            <span class="material-symbols-outlined">
-                              shopping_bag
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-text" style="font-weight: 700;">Amul Ghee (1L)</p>
-                  <p style="color:#83BC2E;font-size: 16px;font-weight: 700;">Rs. 600</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="image-box">
-                  <div class="card-new-label">
-                    New
-                  </div>
-                  <img src="../images/home/product5.jpg" class="card-img-top" alt="...">
-                  <div class="image-icon">
-                    <div class="card-new-label">
-                      New
-                    </div>
-                    <img src="../images/home/product6.webp" class="card-img-top" alt="...">
-                    <div class="row img-icon-row">
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="favourite">
-                            <span class="material-symbols-outlined">
-                            favorite
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="autorenew">
-                            <span class="material-symbols-outlined">
-                              Autorenew
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="search1">
-                            <span class="material-symbols-outlined">
-                              search
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="shopping1">
-                            <span class="material-symbols-outlined">
-                              shopping_bag
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-text" style="font-weight: 700;">Amul Paneer</p>
-                  <p style="color:#83BC2E;font-size: 16px;font-weight: 700;">Rs .80</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="card">
-                <div class="image-box">
-                  <div class="card-new-label">
-                    New
-                  </div>
-                  <img src="../images/home/product8.jpg" class="card-img-top" alt="...">
-                  <div class="image-icon">
-                    <div class="card-new-label">
-                      New
-                    </div>
-                    <img src="../images/home/product9.png" class="card-img-top" alt="...">
-                    <div class="row img-icon-row">
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="favourite">
-                            <span class="material-symbols-outlined">
-                            favorite
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="autorenew">
-                            <span class="material-symbols-outlined">
-                              Autorenew
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="search1">
-                            <span class="material-symbols-outlined">
-                              search
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="shopping1">
-                            <span class="material-symbols-outlined">
-                              shopping_bag
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-text" style="font-weight: 700;">Mix Fruit juice</p>
-                  <p style="color:#83BC2E;font-size: 16px;font-weight: 700;">Rs. 100</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="image-box">
-                  <div class="card-new-label">
-                    New
-                  </div>
-                  <img src="../images/home/product10.jpg" class="card-img-top" alt="...">
-                  <div class="image-icon">
-                    <div class="card-new-label">
-                      New
-                    </div>
-                    <img src="../images/home/product11.jpg" class="card-img-top" alt="...">
-                    <div class="row img-icon-row">
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="favourite">
-                            <span class="material-symbols-outlined">
-                            favorite
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="autorenew">
-                            <span class="material-symbols-outlined">
-                              Autorenew
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="search1">
-                            <span class="material-symbols-outlined">
-                              search
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="shopping1">
-                            <span class="material-symbols-outlined">
-                              shopping_bag
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-text" style="font-weight: 700;">Boat Mango Juice</p>
-                  <p style="color:#83BC2E;font-size: 16px;font-weight: 700;">Rs. 120</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="image-box">
-                  <div class="card-new-label">
-                    New
-                  </div>
-                  <img src="../images/home/product12.jpg" class="card-img-top" alt="...">
-                  <div class="image-icon">
-                    <div class="card-new-label">
-                      New
-                    </div>
-                    <img src="../images/home/products13.webp" class="card-img-top" alt="...">
-                    <div class="row img-icon-row">
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="favourite">
-                            <span class="material-symbols-outlined">
-                            favorite
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="autorenew">
-                            <span class="material-symbols-outlined">
-                              Autorenew
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="co1-3">
-                        <div class="box">
-                          <a href="#" id="search1">
-                            <span class="material-symbols-outlined">
-                              search
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="box">
-                          <a href="#" id="shopping1">
-                            <span class="material-symbols-outlined">
-                              shopping_bag
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <p class="card-text" style="font-weight: 700;">Raw Juice</p>
-                  <p style="color:#83BC2E;font-size: 16px;font-weight: 700;">Rs. 212</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <select id="filter" onchange="applyFilter(this)">
+          <optgroup label="Company Name">
+            <option value="amul">Amul</option>
+            <option value="real">Real</option>
+            <option value="paperboat">Paper Boat</option>
+            <option value="rawjuice">raw Juice</option>
+          </optgroup>
+          <optgroup label="Product Name">
+            <option value="milk">Milk</option>
+            <option value="ghee">Ghee</option>
+            <option value="paneer">Paneer</option>
+            <option value="mixedfruitjuice">Mixed Fruit Juice</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="products">
+        <div class="row">
+          
         </div>
       </div>
     </div>
@@ -529,7 +202,132 @@
   <footer id="footer"></footer>
   <script src="../js/compnentadd.js"></script>
   <script>
-    
-  </script>
+    let products;
+    let selectValue;
+    let priceSort;
+    let originalProducts;
+    let removefilter ;
+    const fetchProducts = async () => {
+        try {
+            const response = await fetch('../products.json');
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            products = await response.json();
+            originalProducts = products;
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    };
+
+    const displayProducts = async () => {
+        await fetchProducts();
+        
+        const productsRow = document.querySelector(".products .row");
+
+        productsRow.innerHTML = '';
+
+        let filteredProducts = products;
+
+        if (selectValue) {
+        filteredProducts = products.filter(product => {
+          const normalizedProductName = product.productName.split(" ").join("").toLowerCase();
+          return product.companyName.toLowerCase() === selectValue || normalizedProductName === selectValue;
+        });
+      } 
+        // Sort products based on priceSort
+        if (priceSort) {
+          filteredProducts.sort((a, b) => {
+              // Ensure price is converted to a number before comparison
+              const priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ""));
+              const priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ""));
+              
+              if (priceSort === 'asc') {
+                  return priceA - priceB;
+              } else if (priceSort === 'desc') {
+                  return priceB - priceA;
+              }return 0;
+
+          });
+        }
+        if(removefilter){
+          console.log("hel");
+          selectValue = "";
+          priceSort = "";
+          console.log(originalProducts)
+          filteredProducts = originalProducts;
+        }
+        // Display filtered and sorted products
+        filteredProducts.forEach((value) => {
+            const productDiv = document.createElement('div');
+            productDiv.classList.add('col');
+            productDiv.id = value.id;
+            productDiv.innerHTML = `
+                <div class="card">
+                    <div class="image-box">
+                        <div class="card-new-label" style="background-color: red;">30%</div>
+                        <img src="${value.img1src}" class="card-img-top" alt="...">
+                        <div class="image-icon">
+                            <div class="card-new-label" style="background-color: red;">30%</div>
+                            <img src="${value.img2src}" class="card-img-top" alt="...">
+                            <div class="row img-icon-row">
+                                <div class="col-3">
+                                    <div class="box">
+                                        <a href="#" id="favourite"><span class="material-symbols-outlined">favorite</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box">
+                                        <a href="#" id="autorenew"><span class="material-symbols-outlined">autorenew</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box">
+                                        <a href="#" id="search1"><span class="material-symbols-outlined">search</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box">
+                                        <a href="#" id="shopping1"><span class="material-symbols-outlined">shopping_bag</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" style="font-weight: 700;">${value.productName} (${value.Quantity})</p>
+                        <p style="color:#83BC2E;font-size: 16px;font-weight: 700;">
+                            <span class="text-muted" style="font-size:14px!important;">Rs. ${value.price}</span>
+                        </p>
+                    </div>
+                </div>
+            `;
+
+            productsRow.appendChild(productDiv);
+        });
+    };
+
+    // Example function to handle filter input changes
+    function applyFilter(input) {
+        selectValue = input.value;
+        displayProducts();  // Call to update product display with new filter
+    }
+
+    // Example function to handle sort input changes
+    function sortByPrice(input) {
+        priceSort = input.value;// Debugging line
+        displayProducts();  // Call to update product display with new sort order
+    }
+
+    function removeAllFilter() {
+      selectValue = "";
+        priceSort = "";
+      displayProducts();
+    }
+    // Initial call to display products (if you want to display all products initially)
+    displayProducts();
+</script>
+
 </body>
+
 </html>
