@@ -1,4 +1,4 @@
-fetch('../html/navbar-footer.html')
+fetch('navbar-footer.html')
       .then(response => response.text())
       .then(data => {
           const fullPath = window.location.pathname;
@@ -19,6 +19,7 @@ fetch('../html/navbar-footer.html')
           })
           document.getElementById('header').appendChild(doc.getElementById("upper-nav"));
           document.getElementById('header').appendChild(doc.getElementById("lower-nav"));
+          document.getElementById('header').appendChild(doc.getElementById("offcanvas-left"));
           document.getElementById('footer').appendChild(doc.getElementById("foot-row1"));
           document.getElementById('footer').appendChild(doc.getElementById("foot-row2"));
       })

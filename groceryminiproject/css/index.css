@@ -13,6 +13,12 @@ body{
 .active{
     color: #83BC2E;
 }
+#menu{
+    display: none;
+}
+.offcanvas{
+    display: none;
+}
 .offer{
     padding: 0 20px;
     color:white;
@@ -749,89 +755,30 @@ footer .main .col a :hover {
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
-    .navbar {
-        background-color: white !important;
-        box-shadow: 0px 2px 4.85px 0.15px rgba(0, 0, 0, 0.1);
-        justify-content: center;
+
+    nav{
+        padding-left: 0;
+        padding: 0 20px;
+    }
+    .navbar-list{
+        margin-left: 0;
+    }
+    .right-list{
+        margin: 0;
+        padding: 0;
+        gap:10px;
     }
 
+    #addtocart{
+        padding: 0;
+    }
+    
     .para1 {
         font-size: 11px;
     }
-
+    
     .material-symbols-outlined {
         font-size: 15px !important;
-    }
-
-    .offcanvas {
-        flex-direction: column;
-    }
-
-    #plus-mobile {
-        display: block;
-    }
-
-    #down-arrow {
-        display: none !important;
-    }
-
-    .shopping img {
-        height: 24px !important;
-        width: 24px !important;
-    }
-
-    .shop .row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .shop-dropdown {
-        width: 90% !important;
-        position: absolute;
-        top: 100%;
-        left: -630%;
-    }
-
-    .tab-setting {
-        display: block;
-    }
-
-    .tab-version {
-        display: block;
-    }
-
-    .navbar-brand {
-        margin-left: 45%;
-    }
-
-    .toggle-btn {
-        margin-left: -120%;
-        border: none;
-    }
-
-    .account {
-        display: block;
-        margin-left: -80%;
-    }
-
-    .shopping-bag {
-        margin-right: 80%;
-    }
-
-    .search {
-        display: none;
-    }
-
-    .shuffle {
-        display: none;
-    }
-
-    .heart {
-        display: none;
-    }
-
-    .setting {
-        display: none;
     }
 
     .section1 {
@@ -842,158 +789,376 @@ footer .main .col a :hover {
         font-size: 12px;
     }
 
-    .modal-carousel-body .row>* {
-        width: 100% !important;
-        ;
-    }
-
-    .modal-carousel .carousel-item img {
-        height: 100% !important;
-        width: 100% !important;
-    }
-
     .section1 .display-1 {
         font-size: 30px !important;
     }
 
-    .section1 .fs-5 {
-        font-size: 15px !important;
-    }
-
-    #meat,
-    #pickle {
-        display: none;
-    }
-
-    .discount-countdown .sub-title {
+    .single-countdown .sub-title {
         font-size: 28px;
     }
 
-    .discount-countdown h2 {
+    .single-countdown h2 {
         font-size: 32px;
     }
 
-    .discount-countdown p {
+    .single-countdown p {
         font-size: 15px;
     }
 
     .testimonial1 .name1 {
         padding-top: 8%;
     }
+   footer{
+    padding: 20px;
+   }
+}
 
-    #pills-fruits:last-child {
+@media screen and (min-width:0px) and (max-width:425px){
+    .navbar-list{
         display: none;
     }
 
-    .footer-form input {
-        width: 500px !important;
+    #upper-nav{
+        justify-content: space-between;
     }
 
-    .form-btn {
-        right: 20px;
+    #upper-nav p{
+        font-size: 10px;
+    }
+    
+    #lower-nav{
+    padding-right: 25px;
+        padding-bottom: 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #lower-nav img{
+        height: 20px;
+    }
+    #menu{
+        display: block;
+    }
+    header{
+        position: relative;
+    }
+    .offcanvas{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index:10;
+        top: 0;
+        background-color: rgba(85, 85, 85, 0.349);
     }
 
-    #sm-font-change {
-        display: none;
+    .offcanvas-content{
+        position: fixed;
+        height: 100%;
+        top:0;
+        padding-top: 20px;
+        width: 50%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap:50px;
     }
 
-    .h5 {
-        font-size: 14px;
+    .offcanvas-content-show{
+        animation: scaleAnim 1s ease;
     }
 
-    .foot-social .social {
-        padding-top: 10px;
-        padding-left: 40%;
-        padding-bottom: 2%;
+    .offcanvas-content-hide{
+        animation: scaleAnimEnd 3s ease-out;
+    }
+
+    .left-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #close{
+        position: absolute;
+        top:5px;
+        border: 1px solid black;
+        border-radius: 50%;
+        right: 5px;
+    }
+
+    @keyframes scaleAnim {
+        0%{
+            transform: scaleX(0);
+            transform-origin: left
+        }
+        100%{
+            transform: scaleX(1);
+            transform-origin: left
+        }
+    }
+
+    @keyframes scaleAnimEnd {
+        0%{
+            transform: scaleX(1);
+            transform-origin: left
+        }
+        100%{
+            transform: scaleX(0);
+            transform-origin: left
+        }
+    }
+
+    .right-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .right-list input{
+        width: 100%!important;
+    }
+
+    .section1{
+        height: 350px;
+        background-position: 30% 50%;
+        background-attachment:unset;
+    }
+
+   .section2{
+    padding: 0 8px;
+   }
+
+   .sub-title{
+    font-size: 20px;
+    }  
+    
+    .section2-title:before{
+        width: 150px;
+        top:-18px
+    }
+    .products-display{
+        flex-direction: column;
+    }
+    .products-display>div{
+        width: 100%!important;
+    }
+    .customer-support{
+        flex-direction: column;
+    }
+    .testimonials{
+        flex-direction: column-reverse;
+    }
+    
+    .section3 .row{
+        padding: 0;
+        height: 250px;
+    }
+    .section3 .row:before{
+        width: 150px;
+        top:12px;
+    }
+    .section3 h1{
+        font-size: 16px;
+    }
+    .countdown{
+        margin-top: 10%;
+    }
+    .single-countdown{
+        width:50px;
+        height: 50px;
+        padding-left: 3px;
+        font-size: 10px;
+    }
+    .countdown .material-symbols-outlined{
+        font-size: 18px!important;
+    }
+    .countdown .btn a{
+        padding: 5px!important;
+        font-size: 18px!important;
+    }
+    .section4{
+        padding-top: 15%;
+    }
+    .section4 .section-title:before{
+        width: 150px;
+        top:3%;
+    }
+    .section4 .title{
+        text-align: center;
+        font-size: 20px;
+    }
+    .section4 .testimonials{
+        padding-top: 0;
+    }
+    .section5 {
+        padding: 0 20px!important;
+    }
+    .section5 .section-title:before{
+        width: 150px;
+        top:-30px;
+    }
+    .section5 h1{
+        font-size: 20px;
+    }
+    .filters{
+        flex-direction: column;
+    }
+    #price{
+        display: flex;
+        font-size: 10px;
+        align-items: center;
+        gap:10px;
+    }
+    .products .row{
+        padding: 5px!important;
+        margin-bottom: 5%;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+    footer .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot-social{
+        flex-direction: column;
+    }
+    .copyright{
+        flex-direction: column;
     }
 }
 
-@media screen and (min-width:425px) and (max-width:767px) {
-    .navbar-brand {
-        margin-left: 35%;
+@media screen and (min-width:426px) and (max-width:767px) {
+    .navbar-list{
+        display: none;
     }
 
-    .navbar {
-        justify-content: center;
+    #upper-nav{
+        justify-content: space-between;
+    }
+
+    #upper-nav p{
+        font-size: 10px;
+    }
+    
+    #lower-nav{
+    padding-right: 25px;
+        padding-bottom: 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #lower-nav img{
+        height: 20px;
+    }
+    #menu{
+        display: block;
+    }
+    header{
+        position: relative;
+    }
+    .offcanvas{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index:10;
+        top: 0;
+        background-color: rgba(85, 85, 85, 0.349);
+    }
+
+    .offcanvas-content{
+        position: fixed;
+        height: 100%;
+        top:0;
+        padding-top: 20px;
+        width: 50%;
         background-color: white;
-        box-shadow: 0px 2px 4.85px 0.15px rgba(0, 0, 0, 0.1);
-    }
-
-    .shop .row {
         display: flex;
         flex-direction: column;
+        gap:50px;
     }
 
-    .toggle-btn {
-        margin-left: -120%;
-        border: none;
+    .offcanvas-content-show{
+        animation: scaleAnim 1s ease;
     }
 
-    .form-control {
-        max-width: 415px !important;
+    .offcanvas-content-hide{
+        animation: scaleAnimEnd 3s ease-out;
     }
 
-    .account {
-        margin-left: -5%;
+    .left-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .shopping-bag {
-        margin-right: 5%;
+    .right-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .tab-version {
-        margin-left: 0% !important;
+    #close{
+        position: absolute;
+        top:5px;
+        border: 1px solid black;
+        border-radius: 50%;
+        right: 5px;
     }
 
-    .shop img {
-        width: 300px !important;
+    @keyframes scaleAnim {
+        0%{
+            transform: scaleX(0);
+            transform-origin: left
+        }
+        100%{
+            transform: scaleX(1);
+            transform-origin: left
+        }
     }
 
-    .tab-setting {
-        display: block;
+    @keyframes scaleAnimEnd {
+        0%{
+            transform: scaleX(1);
+            transform-origin: left
+        }
+        100%{
+            transform: scaleX(0);
+            transform-origin: left
+        }
     }
 
-    .tab-version {
-        display: block;
+    .right-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        padding: 0;
+        margin: 0;
     }
 
-    .account {
-        display: block;
-    }
-
-    .search {
-        display: none;
-    }
-
-    .shuffle {
-        display: none;
-    }
-
-    .heart {
-        display: none;
-    }
-
-    .setting {
-        display: none;
+    .right-list input{
+        width: 100%!important;
     }
 
     .section1 {
         padding-top: 25%;
     }
-
-    .section1 .display-1 {
-        font-size: 25px !important;
+    .products-display{
+        flex-wrap: wrap;
     }
-
-    .section1 .fs-5 {
-        font-size: 15px !important;
-    }
-
-    #meat,
-    #pickle {
-        display: none;
-    }
-
     .customer-support {
         padding: 20px 5px;
         display: flex;
@@ -1002,15 +1167,15 @@ footer .main .col a :hover {
         align-items: center;
     }
 
-    .discount-countdown .sub-title {
+    .countdown .sub-title {
         font-size: 28px;
     }
 
-    .discount-countdown h2 {
+    .countdown h2 {
         font-size: 32px;
     }
 
-    .discount-countdown p {
+    .single-countdown p {
         font-size: 15px;
     }
 
@@ -1018,45 +1183,19 @@ footer .main .col a :hover {
         padding-top: 8%;
     }
 
-    .footer-form .form-btn {
-        right: -25px;
+    footer{
+        flex-direction: column;
+        padding: 20px;
     }
-
-    .foot-anchor .col {
-        display: flex;
+    footer .main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    footer .h5 {
-        font-size: 12px;
+    .foot-social{
+        flex-direction: column;
     }
-
-    .foot-social .social {
-        padding-top: 8px;
-        padding-left: 22%;
-        padding-bottom: 5%;
-    }
-
-    footer .copyright {
-        padding-bottom: 5%;
-    }
-
-    #sm-font-change {
-        display: none;
-    }
-}
-
-@media screen and (min-width:1440px) and (max-width:2560px) {
-    .shop-dropdown {
-        width: 1300px !important;
-        position: absolute;
-        top: 100%;
-        left: -450% !important;
-    }
-
-    .shop img {
-        width: 550px !important;
+    .copyright{
+        flex-direction: column;
     }
 }

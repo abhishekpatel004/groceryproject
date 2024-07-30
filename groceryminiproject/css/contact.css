@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .contactsection3 .row{
     display: flex;
     flex-direction: column;
@@ -41,4 +46,14 @@
     column-count: 3;
     margin-left: 7%;
     column-gap: 20px;
+}
+
+/* Styles for small screens (mobile phones) */
+@media (max-width: 768px) {
+    .contactsection3 .row{
+        width: 80%!important;
+    }
+    #row1 .info{
+        column-count: 0;
+    }
 }

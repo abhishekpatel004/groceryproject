@@ -33,7 +33,7 @@
          "Quantity":"1/2 L",
          "price":"100",
          "img1src":"groceryminiproject/images/home/product7.jpg",
-         "img2src":"groceryminiproject/images/home/product8.jpg"
+         "img2src":"groceryminiproject/images/home/product9.png"
     },
     {
         "id":5,
@@ -41,8 +41,8 @@
          "productName":"Mango Juice",
          "Quantity":"1/2 L",
          "price":"120",
-         "img1src":"groceryminiproject/images/home/product9.png",
-         "img2src":"groceryminiproject/images/home/product10.jpg"
+         "img1src":"groceryminiproject/images/home/product10.jpg",
+         "img2src":"groceryminiproject/images/home/product11.jpg"
     },
     {
         "id":6,
@@ -50,8 +50,8 @@
          "productName":"Mixed Juice",
          "Quantity":"1/2 L",
          "price":"212",
-         "img1src":"groceryminiproject/images/home/product11.jpg",
-         "img2src":"groceryminiproject/images/home/product12.jpg"
+         "img1src":"groceryminiproject/images/home/product12.jpg",
+         "img2src":"groceryminiproject/images/home/products13.webp"
     }
     
 ]

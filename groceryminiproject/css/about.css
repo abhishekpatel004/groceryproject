@@ -54,16 +54,19 @@ ol li{
 #row1 p{
     color: #7d8081;
 }
+
 .aboutsection2  h1 {
     
     font-weight: 800 !important;
 }
+
 .aboutsection2 .row{
     display: flex;
     justify-content: center;
     align-items: center;
     gap:20px;
 }
+
 .aboutsection2 h5 {
     font-size: 24px;
     font-weight: 700 !important;
@@ -79,4 +82,24 @@ ol li{
     font-weight: 400 !important;
 }
 
+@media screen and (min-width:0px) and (max-width:768px){
+   
+    #row1{
+        flex-direction: column;
+    }
+    h2{
+        text-align: center;
+    }
+    h5{
+        font-size: 18px!important;
+    }
+    .row1 p{
+        text-align: center;
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+    .aboutsection2 .row{
+        flex-direction: column;
+    }
+}
 
