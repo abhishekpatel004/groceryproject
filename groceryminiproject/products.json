@@ -5,8 +5,8 @@
          "productName":"milk",
          "Quantity":"1 L",
          "price":"Rs. 60",
-         "img1src":"../images/home/product1.png",
-         "img2src":"../images/home/product2.jpg"
+         "img1src":"groceryminiproject/images/home/product1.png",
+         "img2src":"groceryminiproject/images/home/product2.jpg"
     },
     {
         "id":2,
@@ -14,8 +14,8 @@
          "productName":"Ghee",
          "Quantity":"1 L",
          "price":"620",
-         "img1src":"../images/home/product3.png",
-         "img2src":"../images/home/product4.jpg"
+         "img1src":"groceryminiproject/images/home/product3.png",
+         "img2src":"groceryminiproject/images/home/product4.jpg"
     },
     {
         "id":3,
@@ -23,8 +23,8 @@
          "productName":"Paneer",
          "Quantity":"250 gm",
          "price":"80",
-         "img1src":"../images/home/product5.jpg",
-         "img2src":"../images/home/product6.webp"
+         "img1src":"groceryminiproject/images/home/product5.jpg",
+         "img2src":"groceryminiproject/images/home/product6.webp"
     },
     {
         "id":4,
@@ -32,8 +32,8 @@
          "productName":"Mix Fruit Juice",
          "Quantity":"1/2 L",
          "price":"100",
-         "img1src":"../images/home/product7.jpg",
-         "img2src":"../images/home/product8.jpg"
+         "img1src":"groceryminiproject/images/home/product7.jpg",
+         "img2src":"groceryminiproject/images/home/product8.jpg"
     },
     {
         "id":5,
@@ -41,8 +41,8 @@
          "productName":"Mango Juice",
          "Quantity":"1/2 L",
          "price":"120",
-         "img1src":"../images/home/product9.png",
-         "img2src":"../images/home/product10.jpg"
+         "img1src":"groceryminiproject/images/home/product9.png",
+         "img2src":"groceryminiproject/images/home/product10.jpg"
     },
     {
         "id":6,
@@ -50,8 +50,8 @@
          "productName":"Mixed Juice",
          "Quantity":"1/2 L",
          "price":"212",
-         "img1src":"../images/home/product11.jpg",
-         "img2src":"../images/home/product12.jpg"
+         "img1src":"groceryminiproject/images/home/product11.jpg",
+         "img2src":"groceryminiproject/images/home/product12.jpg"
     }
     
 ]
