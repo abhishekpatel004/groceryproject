@@ -5,6 +5,7 @@
          "productName":"milk",
          "Quantity":"1 L",
          "price":"Rs. 60",
+         "description":"Amul Milk is the most hygenic liquid milk available in the market",
          "img1src":"groceryminiproject/images/home/product1.png",
          "img2src":"groceryminiproject/images/home/product2.jpg"
     },
@@ -14,6 +15,7 @@
          "productName":"Ghee",
          "Quantity":"1 L",
          "price":"620",
+         "description":"Amul Ghee is made from fresh cream and it has typical rich aroma and granular texture.",
          "img1src":"groceryminiproject/images/home/product3.png",
          "img2src":"groceryminiproject/images/home/product4.jpg"
     },
@@ -23,6 +25,7 @@
          "productName":"Paneer",
          "Quantity":"250 gm",
          "price":"80",
+         "description":"Amul Fresh Paneer is made from pure milk, hygenically packed untouched by hand.",
          "img1src":"groceryminiproject/images/home/product5.jpg",
          "img2src":"groceryminiproject/images/home/product6.webp"
     },
@@ -32,6 +35,7 @@
          "productName":"Mix Fruit Juice",
          "Quantity":"1/2 L",
          "price":"100",
+         "description":"Juice made from actual fruit without added sugars or artificial ingredients.",
          "img1src":"groceryminiproject/images/home/product7.jpg",
          "img2src":"groceryminiproject/images/home/product9.png"
     },
@@ -41,6 +45,7 @@
          "productName":"Mango Juice",
          "Quantity":"1/2 L",
          "price":"120",
+         "description":"Made with fresh, handpicked mangoes from some of the best orchids",
          "img1src":"groceryminiproject/images/home/product10.jpg",
          "img2src":"groceryminiproject/images/home/product11.jpg"
     },
@@ -50,6 +55,7 @@
          "productName":"Mixed Juice",
          "Quantity":"1/2 L",
          "price":"212",
+         "description":"It is the combination of many fruits in this product",
          "img1src":"groceryminiproject/images/home/product12.jpg",
          "img2src":"groceryminiproject/images/home/products13.webp"
     }
